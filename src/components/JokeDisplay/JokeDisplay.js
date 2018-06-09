@@ -60,12 +60,13 @@ export default class JokeDisplay extends React.Component {
         >
           <Icon name="random"/>Randomize
         </Button>
+        <br/>
+        <Loader size='medium' inline active={this.state.loading}>Loading</Loader>
         <Card.Group 
           items={this.generateJokes()} 
           centered
           className={this.state.loading? "jokesHidden" : ""}
         />
-        <Loader size='massive' active={this.state.loading}>Fetching New Jokes</Loader>
       </Container>
     );
   }
