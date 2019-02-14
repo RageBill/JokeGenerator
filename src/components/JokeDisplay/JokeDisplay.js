@@ -27,7 +27,7 @@ export default class JokeDisplay extends React.Component {
     this.setState({
       loading: true, 
     });
-    const url = "https://08ad1pao69.execute-api.us-east-1.amazonaws.com/dev/random_ten";
+    const url = "https://official-joke-api.appspot.com/random_ten";
     fetch(url, {
       headers:{
         Accept: "application/json",
